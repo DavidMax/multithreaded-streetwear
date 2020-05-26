@@ -1,6 +1,8 @@
 import React from 'react';
 
-import FormInput from '../../../components/form-input/form-input.component'
+import { signInWithGoogle } from '../../../firebase/firebase.utils';
+
+import FormInput from '../../../components/form-input/form-input.component';
 
 class SignIn extends React.Component {
     constructor(props) {
@@ -19,7 +21,7 @@ class SignIn extends React.Component {
 
     handleChange = event => {
         const {value, name} = event.target;
-        this.setState({ [name] : value })
+        this.setState({ [name] : value });
     }
 
     render() {
@@ -45,8 +47,8 @@ class SignIn extends React.Component {
                     />
                 </form>
                 <button type='submit'>Sign In</button>
+                <button onClick={signInWithGoogle}>Sign In With Google</button>
             </div>
-            
         );
     }
 
