@@ -17,10 +17,10 @@ const config = {
     measurementId: "G-T3SPNRML0B"
   };
 
-  firebase.initializeApp(config);
+firebase.initializeApp(config);
 
-  export const auth = firebase.auth();
-  export const firestore = firebase.firestore();
+export const auth = firebase.auth();
+export const firestore = firebase.firestore();
 
 // setup Google auth provider
 const provider = new firebase.auth.GoogleAuthProvider();
