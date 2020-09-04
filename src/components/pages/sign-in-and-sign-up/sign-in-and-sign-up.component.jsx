@@ -1,11 +1,15 @@
 import React from 'react';
 
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
+
 import SignIn from '../../auth/sign-in/sign-in.component'
 
 const SignInAndSignUpPage = () => (
-  <div className='sign-in-and-sign-up'>
+  <Container maxWidth="sm">
     <SignIn />
-  </div>
+  </Container>
 );
 
 export default SignInAndSignUpPage;
